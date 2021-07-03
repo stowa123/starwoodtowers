@@ -1,0 +1,211 @@
+/* Resets */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, p, blockquote, table, th, td, embed, object {
+	padding: 0;
+	margin: 0;
+	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+fieldset, img, abbr {
+	border: 0;
+	}
+address, caption, cite, code, dfn, em,
+h1, h2, h3, h4, h5, h6, strong, th, var {
+	font-weight: normal;
+	font-style: normal;
+	}
+ul {
+	list-style: none;
+	}
+caption, th {
+	text-align: left;
+	}
+q:before, q:after {
+	content: '';
+	}
+a, ins {
+	text-decoration: none;
+	}
+
+  /*******************************
+* ACCORDION WITH TOGGLE ICONS
+* Does not work properly if "in" is added after "collapse".
+*******************************/
+  .panel-group .panel {
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #EEEEEE;
+  }
+
+  .panel-default > .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    color: #212121;
+    background-color: #FAFAFA;
+    border-color: #EEEEEE;
+  }
+
+  .panel-title {
+    font-size: 14px;
+  }
+
+  .panel-title > a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+  }
+
+  .more-less {
+    float: right;
+    color: #212121;
+  }
+
+  .panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #EEEEEE;
+  }
+
+/* ----- v CAN BE DELETED v ----- */
+body {
+  background-color: #26a69a;
+}
+
+.demo {
+  padding-top: 60px;
+  padding-bottom: 110px;
+}
+
+.demo-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: #212121;
+  text-align: center;
+}
+
+.demo-footer > a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Typography */
+@import url('https://fonts.googleapis.com/css?family=Inter:400');
+
+html {font-size: 100%;} /*16px*/
+
+*{
+  font-smooth: auto;
+}
+body {
+  background: #333;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #aaa;
+}
+
+p {margin-bottom: 1rem;}
+
+a, a:active, a:visited{
+  color:#bfbf65;
+  text-decoration: none;
+}
+a:hover{
+  color:white;
+  text-decoration: underline;
+}
+
+em, .highlight{
+  color:#bfbf65;
+  display: inline-block;
+}
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+h6 {font-size: 1.1rem;}
+
+small, .text_small {font-size: 0.8rem;}
+
+h1, h2, h3, h4, h5, h6 {
+  color:#fff;
+  font-weight: 600;
+}
+
+
+strong{
+  font-weight: 600;
+}
+/* Content */
+
+header{
+  border-bottom: 1px solid #444;
+  padding: 1.5em 2em;
+  background: #333;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.wrapper.first{
+  padding-top: 160px !important;
+}
+
+.wrapper{
+  padding:64px 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+
+footer{
+  background: #222;
+  font-size: 90%;
+  color:#888;
+}
+footer h6{
+  color:#999;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 760px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .wrapper{
+    width:auto;
+    padding:0 8%;
+
+  }
+
+  footer .wrapper{
+    padding:64px 8%;
+  }
+
+  h1{
+    font-size: 2.2rem;
+  }
+
+  .wrapper.first{
+    padding-top: 120px !important;
+  }
+}
